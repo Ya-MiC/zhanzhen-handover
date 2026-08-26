@@ -1,13 +1,22 @@
 # 08 · Skill 与记忆（永久能力清单）
 
-## Hermes Skills（本机 skills/ 目录，跨会话生效）
+## Hermes Skills（真实清单：89 个，文件系统扫描导出）
+
+完整注册表见 [skills/skill-registry.md](skills/skill-registry.md)（从 /opt/data/skills/ 逐目录扫描，含每个的官方 description）。
+
+### 与湛箴业务直接相关的核心技能
 
 | skill | 用途 |
 |---|---|
-| **zhanzhen-delivery** v1.1 | 湛箴交付规范全集：架构定稿/命名口径/UI验收清单/协作铁律/仓库分工地图 |
-| github-rest-content-workflow | Git Data API 批量推送/Release/Contents 缓存409对策 |
-| audit-os-engineering | 用户亲笔工程规范要点 |
-| hermes-github-org | 七分支整理规范 |
+| **zhanzhen-delivery** | 湛箴交付根规范（架构定稿/UI验收/协作铁律/仓库分工地图） |
+| **github-rest-content-workflow** | Git Data API 批量推送/409对策/Release 上传——湛箴全程使用 |
+| **audit-os-engineering** | 用户亲笔工程规范要点（跨仓契约/状态机/证据链不变量） |
+| **hermes-github-org** | 七分支整理规范 |
+| **dsh-plugin-engineering** | DSH 插件官方编写规范（工作流插件的规范来源） |
+| **github-api-writing** | REST 批量写 GitHub 的可靠模式 |
+
+其余 83 个为通用能力（创意/效率/研究/MLOps/调试等），按需加载，详见注册表。
+
 
 ## 关键记忆条目（MEMORY.md 摘要）
 
