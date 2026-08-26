@@ -1,73 +1,178 @@
-# Hermes Skill 注册表（Ya-MiC 环境全量清单）
+# Hermes Skill 全量注册表（真实文件系统导出）
 
-> 导出时间：2026-08-26 · 来源：/opt/data/skills/
-> 每条含：名称 / 触发条件 / 核心内容一句话。
+> 导出时间：2026-08-26 · 来源：`/opt/data/skills/` 文件系统逐目录扫描 · **共 89 个**，零编造
+> 每条：路径 / frontmatter name / 官方 description 原文。
 
-## 软件开发类（software-development/）
+## apple（4）
 
-### zhanzhen-delivery ★本项目根规范
-- 触发：凡涉及 zhanzhen / audit-os-mobile / 湛箴 / 审计OS 的任何动作前必读
-- 内容：架构定稿（一仓三分支/PostgreSQL统一/Fernet加密护城河/双门户四角色）、命名口径v3（正名只湛箴，🐙符号，OZ内部代号）、商业红线（免费+专业两档/CPA签发边界/不用AGPL）、UI验收清单、协作铁律（直推GitHub不本地折腾/多仓分工/卡住先问/ox-alpha子agent并行）
-- 关键文件：SKILL.md
+| 路径 | name | description |
+|---|---|---|
+| `apple/apple-notes/SKILL.md` | apple-notes | Manage Apple Notes via memo CLI: create, search, edit. |
+| `apple/apple-reminders/SKILL.md` | apple-reminders | Apple Reminders via remindctl: add, list, complete. |
+| `apple/findmy/SKILL.md` | findmy | Track Apple devices/AirTags via FindMy.app on macOS. |
+| `apple/imessage/SKILL.md` | imessage | Send and receive iMessages/SMS via the imsg CLI on macOS. |
 
-### audit-os-engineering
-- 触发：动 Ya-MiC 审计OS系代码前必读
-- 内容：用户亲笔工程规范要点——跨仓契约/状态机/证据链不变量/Agent工作协议（修改前列清单、小步提交、DoD七条）
+## autonomous-ai-agents（6）
 
-### systematic-debugging
-- 触发：修 bug 时
-- 内容：4阶段根因调试法——先理解再动手
+| 路径 | name | description |
+|---|---|---|
+| `autonomous-ai-agents/claude-code/SKILL.md` | claude-code | Delegate coding to Claude Code CLI (features, PRs). |
+| `autonomous-ai-agents/codex/SKILL.md` | codex | Delegate coding to OpenAI Codex CLI (features, PRs). |
+| `autonomous-ai-agents/computer-use/SKILL.md` | computer-use | Drive the desktop in the background without stealing focus. |
+| `autonomous-ai-agents/hermes-agent/SKILL.md` | hermes-agent | Use, configure, theme, extend, and orchestrate Hermes Agent. |
+| `autonomous-ai-agents/merge-reconciler/SKILL.md` | merge-reconciler | Neutral third-party resolution of agent merge conflicts. |
+| `autonomous-ai-agents/opencode/SKILL.md` | opencode | Delegate coding to OpenCode CLI (features, PR review). |
 
-### test-driven-development
-- 触发：写新功能时
-- 内容：RED-GREEN-REFACTOR 循环强制
+## creative（16）
 
-### requesting-code-review
-- 触发：commit 前
-- 内容：安全扫描+质量门+自动修复
+| 路径 | name | description |
+|---|---|---|
+| `creative/architecture-diagram/SKILL.md` | architecture-diagram | Dark-themed SVG architecture/cloud/infra diagrams as HTML. |
+| `creative/ascii-art/SKILL.md` | ascii-art | ASCII art: pyfiglet, cowsay, boxes, image-to-ascii. |
+| `creative/ascii-video/SKILL.md` | ascii-video | ASCII video: convert video/audio to colored ASCII MP4/GIF. |
+| `creative/baoyu-infographic/SKILL.md` | baoyu-infographic | Infographics: 21 layouts x 21 styles (信息图, 可视化). |
+| `creative/claude-design/SKILL.md` | claude-design | Design one-off HTML artifacts (landing, deck, prototype). |
+| `creative/comfyui/SKILL.md` | comfyui | Generate images, video, and audio via diffusion workflows. |
+| `creative/design-md/SKILL.md` | design-md | Author/validate/export Google's DESIGN.md token spec files. |
+| `creative/excalidraw/SKILL.md` | excalidraw | Hand-drawn Excalidraw JSON diagrams (arch, flow, seq). |
+| `creative/humanizer/SKILL.md` | humanizer | Humanize text: strip AI-isms and add real voice. |
+| `creative/manim-video/SKILL.md` | manim-video | Manim CE animations: 3Blue1Brown math/algo videos. |
+| `creative/p5js/SKILL.md` | p5js | p5.js sketches: gen art, shaders, interactive, 3D. |
+| `creative/popular-web-designs/SKILL.md` | popular-web-designs | 54 real design systems (Stripe, Linear, Vercel) as HTML/CSS. |
+| `creative/pretext/SKILL.md` | pretext | Build creative browser demos with DOM-free text layout. |
+| `creative/sketch/SKILL.md` | sketch | Throwaway HTML mockups: 2-3 design variants to compare. |
+| `creative/songwriting-and-ai-music/SKILL.md` | songwriting-and-ai-music | Songwriting craft and Suno AI music prompts. |
+| `creative/touchdesigner-mcp/SKILL.md` | touchdesigner-mcp | Control TouchDesigner via twozero MCP. |
 
-### plan / spike / simplify-code / dogfood / python-debugpy / node-inspect-debugger / inspecting-hermes-desktop-dom / hermes-agent-skill-authoring
-- 计划文档 / 丢弃式实验 / 并行4-agent代码清理 / Web应用探索QA / Python pdb+debugpy / Node --inspect CDP / Hermes桌面DOM检查 / SKILL.md编写规范
+## devops（2）
 
-## GitHub 类（github/）
+| 路径 | name | description |
+|---|---|---|
+| `devops/github-actions-api/SKILL.md` | github-actions-api | Dispatch GitHub Actions via REST; PAT scope pitfalls. |
+| `devops/sdlc-review/SKILL.md` | sdlc-review | Review Kanban handoffs and route verified outcomes. |
 
-### github-rest-content-workflow ★湛箴全程使用
-- 触发：任何 GitHub REST 写操作
-- 内容：Git Data API 批量推送（blob→tree→commit→ref）/ Contents API 缓存409对策 / Release资产上传 / 空仓引导建分支 / 验证用 contents API 不用 raw（CDN延迟）
+## dsh-plugin-engineering（1）
 
-### github-pr-workflow / github-code-review / github-issue-to-pr / github-issues / github-repo-management / github-auth
-- PR生命周期 / PR评审 / Issue转PR带CI状态 / Issue管理 / 仓库管理 / PAT认证配置
+| 路径 | name | description |
+|---|---|---|
+| `dsh-plugin-engineering/SKILL.md` | dsh-plugin-engineering | 為 DeepSeek Harness (DSH) 編寫工程化插件的完整流程與官方規範要點. |
 
-## 自主智能体类（autonomous-ai-agents/）
+## email（2）
 
-### claude-code / codex / opencode
-- 外部 CLI 编码 agent 委派（特性/PR）
+| 路径 | name | description |
+|---|---|---|
+| `email/email-inbox-triage/SKILL.md` | email-inbox-triage | Triage an inbox: prioritize threads, draft replies safely. |
+| `email/himalaya/SKILL.md` | himalaya | Himalaya CLI: IMAP/SMTP email from terminal. |
 
-### computer-use
-- 后台桌面操控不抢焦点
+## github（7）
 
-### hermes-agent
-- Hermes 自身配置/主题/扩展/编排；文档 https://hermes-agent.nousresearch.com/docs 为准
+| 路径 | name | description |
+|---|---|---|
+| `github/codebase-inspection/SKILL.md` | codebase-inspection | Inspect codebases w/ pygount: LOC, languages, ratios. |
+| `github/github-auth/SKILL.md` | github-auth | GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login. |
+| `github/github-code-review/SKILL.md` | github-code-review | Review PRs: diffs, inline comments via gh or REST. |
+| `github/github-issue-to-pr/SKILL.md` | github-issue-to-pr | Carry a GitHub issue to a verified PR with honest CI state. |
+| `github/github-issues/SKILL.md` | github-issues | Create, triage, label, assign GitHub issues via gh or REST. |
+| `github/github-pr-workflow/SKILL.md` | github-pr-workflow | GitHub PR lifecycle: branch, commit, open, CI, merge. |
+| `github/github-repo-management/SKILL.md` | github-repo-management | Clone/create/fork repos; manage remotes, releases. |
 
-### merge-reconciler
-- agent 合并冲突的第三方仲裁
+## github-rest-content-workflow（1）
 
-## 创意类（creative/）——按需加载
-ascii-art(字符画) · ascii-video · architecture-diagram(SVG架构图HTML) · baoyu-infographic(21布局×21风格信息图) · claude-design(一次性HTML设计) · comfyui(扩散模型生图生视频) · design-md(Google DESIGN.md令牌) · excalidraw(手绘图表JSON) · humanizer(去AI味) · manim-video(数学动画) · p5js(创意编程/着色器) · popular-web-designs(54个真实设计系统HTML) · pretext(DOM-free文字排版demo) · sketch(2-3方案HTML mockup) · songwriting-and-ai-music(作曲+Suno提示词) · touchdesigner-mcp(TouchDesigner控制)
+| 路径 | name | description |
+|---|---|---|
+| `github-rest-content-workflow/SKILL.md` | github-rest-content-workflow | Edit GitHub repos via REST API, no clone; sha pitfalls. |
 
-## 效率类（productivity/）
-airtable · box(云文件) · document-to-action-items · docx(Word) · google-workspace(Gmail/Calendar/Drive/Docs/Sheets via gws CLI) · maps(OSM地理) · meeting-action-items · nano-pdf(PDF自然语言编辑) · notion · ocr-and-documents(pymupdf/marker) · pdf · powerpoint · product-price-monitor(价格监控) · session-librarian(会话整理) · teams-meeting-pipeline · weekly-review-planning · xlsx(Excel)
+## hermes-github-org（1）
 
-## 研究类（research/）
-arxiv · blocked-page-recovery(WAF绕过) · blogwatcher(RSS监控) · competitor-news-monitor · grounded-citations(引用落地) · llm-wiki(Karpathy LLM wiki)
+| 路径 | name | description |
+|---|---|---|
+| `hermes-github-org/SKILL.md` | hermes-github-org | 整理用戶 Ya-MiC 的 GitHub 進 hermes 倉庫（DSH 規範多分支多語種）. |
 
-## 社媒/媒体/邮件/智能家居/其他
-xurl(X/Twitter CLI) · gif-search(Tenor) · youtube-content(字幕转博客) · songsee(音频频谱) · himalaya(IMAP/SMTP终端) · email-inbox-triage · openhue(飞利浦灯) · dsh-plugin-engineering(**DSH插件编写官方规范**——湛箴工作流插件的规范来源) · hermes-github-org(Ya-MiC仓库七分支整理)
+## media（3）
 
-## MLOps 类
-huggingface-hub(hf CLI) · llama-cpp(本地GGUF) · serving-llms-vllm(vLLM部署) · evaluating-llms-harness(lm-eval基准) · weights-and-biases(实验跟踪)
+| 路径 | name | description |
+|---|---|---|
+| `media/gif-search/SKILL.md` | gif-search | Search/download GIFs from Tenor via curl + jq. |
+| `media/songsee/SKILL.md` | songsee | Audio spectrograms/features (mel, chroma, MFCC) via CLI. |
+| `media/youtube-content/SKILL.md` | youtube-content | YouTube transcripts to summaries, threads, blogs. |
 
-## 使用约定（配合 zhanzhen-delivery 协作铁律）
-1. 干活前 skill_view 加载对应技能，宁多勿漏
-2. 发现技能过时立即 skill_manage(patch)
-3. 本注册表如有新增技能需手动同步到 zhanzhen-handover 仓库
+## mlops（5）
+
+| 路径 | name | description |
+|---|---|---|
+| `mlops/evaluation/evaluating-llms-harness/SKILL.md` | evaluating-llms-harness | lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.). |
+| `mlops/evaluation/weights-and-biases/SKILL.md` | weights-and-biases | W&B: log ML experiments, sweeps, model registry, dashboards. |
+| `mlops/huggingface-hub/SKILL.md` | huggingface-hub | HuggingFace hf CLI: search/download/upload models, datasets. |
+| `mlops/inference/llama-cpp/SKILL.md` | llama-cpp | llama.cpp local GGUF inference + HF Hub model discovery. |
+| `mlops/inference/serving-llms-vllm/SKILL.md` | serving-llms-vllm | vLLM: high-throughput LLM serving, OpenAI API, quantization. |
+
+## note-taking（1）
+
+| 路径 | name | description |
+|---|---|---|
+| `note-taking/obsidian/SKILL.md` | obsidian | Read, search, create, and edit notes in the Obsidian vault. |
+
+## productivity（17）
+
+| 路径 | name | description |
+|---|---|---|
+| `productivity/airtable/SKILL.md` | airtable | Airtable REST API via curl. Records CRUD, filters, upserts. |
+| `productivity/box/SKILL.md` | box | Box manages cloud files, sharing, search, and metadata. |
+| `productivity/document-to-action-items/SKILL.md` | document-to-action-items | Extract cited obligations, deadlines, tasks from documents. |
+| `productivity/docx/SKILL.md` | docx | Create, read, edit, template, and review Word .docx files. |
+| `productivity/google-workspace/SKILL.md` | google-workspace | Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python. |
+| `productivity/maps/SKILL.md` | maps | Geocode, POIs, routes, timezones via OpenStreetMap/OSRM. |
+| `productivity/meeting-action-items/SKILL.md` | meeting-action-items | Turn meeting notes into cited decisions, owners, tickets. |
+| `productivity/nano-pdf/SKILL.md` | nano-pdf | Edit text in existing PDFs via natural-language prompts. |
+| `productivity/notion/SKILL.md` | notion | Notion API + ntn CLI: pages, databases, markdown, Workers. |
+| `productivity/ocr-and-documents/SKILL.md` | ocr-and-documents | Extract text from PDFs/scans (pymupdf, marker-pdf). |
+| `productivity/pdf/SKILL.md` | pdf | Create, read, merge, fill, and secure PDF files. |
+| `productivity/powerpoint/SKILL.md` | powerpoint | Create, read, edit .pptx decks with python-pptx. |
+| `productivity/product-price-monitor/SKILL.md` | product-price-monitor | Watch product, flight, or listing prices; alert on target. |
+| `productivity/session-librarian/SKILL.md` | session-librarian | Organize sessions by prompt: find, rename, archive, prune. |
+| `productivity/teams-meeting-pipeline/SKILL.md` | teams-meeting-pipeline | Teams meeting summaries, job replay, Graph subscriptions. |
+| `productivity/weekly-review-planning/SKILL.md` | weekly-review-planning | Weekly reset: commitments, stalled work, next-week plan. |
+| `productivity/xlsx/SKILL.md` | xlsx | Create, read, edit Excel .xlsx workbooks and CSVs. |
+
+## research（7）
+
+| 路径 | name | description |
+|---|---|---|
+| `research/arxiv/SKILL.md` | arxiv | Search arXiv papers by keyword, author, category, or ID. |
+| `research/blocked-page-recovery/SKILL.md` | blocked-page-recovery | Recover blocked/paywalled/WAF'd pages via fallbacks. |
+| `research/blogwatcher/SKILL.md` | blogwatcher | Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool. |
+| `research/competitor-news-monitor/SKILL.md` | competitor-news-monitor | Watch named companies for material news; cited digests. |
+| `research/grounded-citations/SKILL.md` | grounded-citations | Ground answers and documents in cited, verifiable sources. |
+| `research/llm-wiki/SKILL.md` | llm-wiki | Karpathy's LLM Wiki: build/query interlinked markdown KB. |
+| `research/research-paper-writing/SKILL.md` | research-paper-writing | Write ML papers for NeurIPS/ICML/ICLR: design→submit. |
+
+## smart-home（1）
+
+| 路径 | name | description |
+|---|---|---|
+| `smart-home/openhue/SKILL.md` | openhue | Control Philips Hue lights, scenes, rooms via OpenHue CLI. |
+
+## social-media（1）
+
+| 路径 | name | description |
+|---|---|---|
+| `social-media/xurl/SKILL.md` | xurl | X/Twitter via xurl CLI: raw post search, posting, DM, media. |
+
+## software-development（14）
+
+| 路径 | name | description |
+|---|---|---|
+| `software-development/audit-os-engineering/SKILL.md` | audit-os-engineering | 動 Ya-MiC 審計OS系代碼前必讀：跨倉契約/狀態機/證據鏈不變量與Agent工作協議. |
+| `software-development/dogfood/SKILL.md` | dogfood | Exploratory QA of web apps: find bugs, evidence, reports. |
+| `software-development/github-api-writing/SKILL.md` | github-api-writing | 通過 REST API 批量寫 GitHub 倉庫的可靠模式：繞緩存、批量推送、委派陷阱. |
+| `software-development/hermes-agent-skill-authoring/SKILL.md` | hermes-agent-skill-authoring | Author in-repo SKILL.md files: frontmatter and structure. |
+| `software-development/inspecting-hermes-desktop-dom/SKILL.md` | inspecting-hermes-desktop-dom | Read the live Hermes desktop DOM/CSS over CDP. |
+| `software-development/node-inspect-debugger/SKILL.md` | node-inspect-debugger | Debug Node.js via --inspect + Chrome DevTools Protocol CLI. |
+| `software-development/plan/SKILL.md` | plan | Write a markdown plan to .hermes/plans/; no execution. |
+| `software-development/python-debugpy/SKILL.md` | python-debugpy | Debug Python: pdb REPL + debugpy remote (DAP). |
+| `software-development/requesting-code-review/SKILL.md` | requesting-code-review | Pre-commit review: security scan, quality gates, auto-fix. |
+| `software-development/simplify-code/SKILL.md` | simplify-code | Parallel 4-agent cleanup of recent code changes. |
+| `software-development/spike/SKILL.md` | spike | Throwaway experiments to validate an idea before build. |
+| `software-development/systematic-debugging/SKILL.md` | systematic-debugging | 4-phase root cause debugging: understand bugs before fixing. |
+| `software-development/test-driven-development/SKILL.md` | test-driven-development | TDD: enforce RED-GREEN-REFACTOR, tests before code. |
+| `software-development/zhanzhen-delivery/SKILL.md` | zhanzhen-delivery | 湛箴审计OS交付规范：架构定稿、UI验收清单、部署要点、用户(Ya-MiC)协作铁律。改zhanzhen仓库前必读。 |
