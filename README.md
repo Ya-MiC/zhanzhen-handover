@@ -20,6 +20,7 @@
 | 07 | [子agent协同方法](07_SUBAGENT_PLAYBOOK.md) | 怎么派/验收/补位 |
 | 08 | [Skill 与记忆](08_SKILLS_AND_MEMORY.md) | 永久技能清单 |
 | 09 | [下一步建议](09_NEXT_STEPS.md) | 移交后路线 |
+| 10 | [Skill 全量注册表](skills/skill-registry.md) | Hermes 全部技能清单与触发条件 |
 
 ## 一屏速览：现在能用什么
 
